@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, sans-serif; background:#f5f6f8; color:#222; }
+.container { width: min(900px, 92%); margin: 0 auto; }
+.topbar { background:#111; color:#fff; padding: 14px 0; }
+.brand { margin:0; font-size: 18px; }
+.nav { display:flex; gap:14px; align-items:center; }
+.nav a { color:#fff; text-decoration:none; opacity:.9; }
+.nav a:hover { opacity:1; text-decoration: underline; }
+.inline { display:inline; margin:0; }
+.linklike { background:none; border:none; color:#fff; cursor:pointer; padding:0; font:inherit; opacity:.9; }
+.linklike:hover { opacity:1; text-decoration: underline; }
+
+.card { background:#fff; margin: 22px auto; padding: 18px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,.07); }
+.form p { margin: 10px 0; }
+input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 10px; }
+button { padding: 10px 14px; border:none; border-radius: 10px; background:#ff7a00; color:#fff; cursor:pointer; }
+button:hover { filter: brightness(.95); }
+.muted { color:#555; }
