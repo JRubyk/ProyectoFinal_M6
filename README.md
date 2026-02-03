@@ -1,4 +1,5 @@
 
+dame todo el readme en formato Markdown
 # ProyectoFinal_M6 – Autenticación en Django
 
 Proyecto desarrollado como parte del **Módulo 6 – Desarrollo de Aplicaciones Web con Python Django**.  
@@ -21,15 +22,17 @@ El objetivo es implementar un sistema de autenticación de usuarios que incluya 
 
 ## 🛠️ Tecnologías utilizadas
 
-- Python 3
-- Django
-- HTML
-- CSS
-- Git / GitHub
+- Python 3  
+- Django  
+- HTML  
+- CSS  
+- Git / GitHub  
 
 ---
 
 ## 📂 Estructura del proyecto
+
+
 
 ProyectoFinal_M6/
 │
@@ -64,31 +67,55 @@ ProyectoFinal_M6/
 ├─ README.md
 └─ .gitignore
 
+
 ---
 
-## 🔗 Rutas principales
+## ▶️ Pasos para ejecutar el proyecto
 
-- Registro de usuario: /register/
-- Inicio de sesión: /login/
-- Cierre de sesión: /logout/
-- Vista protegida (Dashboard): /dashboard/
+### 1. Crear y activar entorno virtual
+```bash
+python -m venv venv
+source venv/Scripts/activate   # Windows (Git Bash)
+
+2. Instalar dependencias
+pip install django
+
+3. Ejecutar migraciones
+python manage.py migrate
+
+4. Iniciar el servidor
+python manage.py runserver
+
+
+El proyecto estará disponible en:
+👉 http://127.0.0.1:8000/
+
+🔗 Rutas principales
+
+Registro de usuario: /register/
+
+Inicio de sesión: /login/
+
+Cierre de sesión: /logout/
+
+Vista protegida (Dashboard): /dashboard/
 
 🔐 Vistas protegidas
 
 La vista Dashboard está protegida mediante autenticación.
-Si un usuario no autenticado intenta acceder directamente a /dashboard/, será redirigido automáticamente al login.
+Si un usuario no autenticado intenta acceder directamente a /dashboard/, será redirigido automáticamente a la página de inicio de sesión.
 
 👤 Usuario de prueba
 
 Los usuarios pueden crearse directamente desde la página de registro (/register/).
-Una vez registrado, el usuario puede iniciar sesión y acceder al dashboard.
+Una vez registrado, el usuario puede iniciar sesión y acceder a la vista protegida.
 
 📸 Evidencia
 
-- En la carpeta screenshots/ se incluyen capturas de:
-- Registro de usuario.
-- Inicio de sesión.
+En la carpeta screenshots/ se incluyen capturas de:
+
+Registro de usuario.
+
+Inicio de sesión.
 
 Acceso exitoso a la vista protegida (dashboard).
-
-Alumna: Jeimy Caceres
